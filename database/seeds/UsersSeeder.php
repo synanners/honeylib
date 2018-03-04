@@ -13,14 +13,12 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS=0');
-
-        DB::table('users')->truncate();
+        DB::table('users');
 
         $user = new User();
         $user->name = "Sample User";
-        $user->email = "";
-        $user->password = "";
-
+        $user->email = "admin@gmail.com";
+        $user->password = bcrypt("admin123");
+        $user->save();
     }
 }

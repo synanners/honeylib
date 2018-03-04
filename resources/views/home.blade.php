@@ -19,7 +19,6 @@
                         <th width="25%">Active</th>
                     </tr>
                     </thead>
-
                     <tbody>
                     <tr class="tr-td--custom">
                         {{-- Columns --}}
@@ -32,17 +31,19 @@
                         <td class="td--content-left">lastlogin</td>
                         <td class="td--content-left">active</td>
                     </tr>
-                    <tr class="tr-td--custom">
-                        {{-- Columns --}}
-                        <td class="td--content-left">LOGO HERE</td>
-                        <td class="td--content-left">stud_num</td>
-                        <td class="td--content-left">name</td>
-                        <td class="td--content-left">course</td>
-                        <td class="td--content-left">timein</td>
-                        <td class="td--content-left">timeout</td>
-                        <td class="td--content-left">lastlogin</td>
-                        <td class="td--content-left">active</td>
-                    </tr>
+                    @foreach($students as $stud)
+                        <tr class="tr-td--custom">
+                            {{-- Columns --}}
+                            <td class="td--content-left">{{ $stud->logo }}</td>
+                            <td class="td--content-left">{{ $stud->sutd_num }}</td>
+                            <td class="td--content-left">{{ $stud->name }}</td>
+                            <td class="td--content-left">{{ $stud->course }}</td>
+                            <td class="td--content-left">{{ $stud->timein }}</td>
+                            <td class="td--content-left">{{ $stud->timeout }}</td>
+                            <td class="td--content-left">{{ $stud->lastlogin }}</td>
+                            <td class="td--content-left">{{ $stud->active }}</td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>
