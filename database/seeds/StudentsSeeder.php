@@ -32,7 +32,7 @@ class StudentsSeeder extends Seeder
         ]);
 
         DB::table('students')->insert([
-            'student_num'=>'20125523',
+            'student_num'=>'201255223',
             'name'=>'Joshua Emmanuel',
             'course'=>'BS ITDA',
             'timein'=>'11:22:12',
@@ -52,7 +52,7 @@ class StudentsSeeder extends Seeder
         ]);
 
         DB::table('students')->insert([
-            'student_num'=>'20125523',
+            'student_num'=>'201253333',
             'name'=>'Maria Angela Evangelista',
             'course'=>'BS EE',
             'timein'=>'08:22:12',
