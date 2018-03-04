@@ -14,13 +14,13 @@ class LabPCSeeder extends Seeder
         DB::table('labpc')->insert([
             'pc_name'=>'PC-1',
             'ip_address'=>'192.168.221.222',
-            'active'=>'201255223'
+            'in_use'=>'201255223'
         ]);
 
         DB::table('labpc')->insert([
             'pc_name'=>'PC-2',
             'ip_address'=>'192.168.221.221',
-            'active'=>'201253333'
+            'in_use'=>'201253333'
         ]);
     }
 }

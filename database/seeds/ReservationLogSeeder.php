@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class ReservationLogSeeder extends Seeder
@@ -14,8 +15,8 @@ class ReservationLogSeeder extends Seeder
         DB::table('reservationlog')->insert([
             'res_number'=>'040320180001',
             'pc_name'=>'PC-1',
-            'starttime'=>'11:22:12',
-            'endtime'=>'13:22:12',
+            'starttime'=> Carbon::now(),
+            'endtime'=> Carbon::now(),
             'student'=>'Joshua Emmanuel',
             'active'=> '0'
 
@@ -24,11 +25,10 @@ class ReservationLogSeeder extends Seeder
         DB::table('reservationlog')->insert([
             'res_number'=>'040320180213',
             'pc_name'=>'PC-2',
-            'starttime'=>'08:22:12',
-            'endtime'=>'09:22:12',
+            'starttime'=> Carbon::now(),
+            'endtime'=> Carbon::now(),
             'student'=>'Maria Angela Evangelista',
             'active'=>'0'
-
         ]);
     }
 }

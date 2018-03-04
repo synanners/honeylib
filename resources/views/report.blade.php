@@ -5,7 +5,7 @@
 
     <div class="col-md-12">
         <table id="customTable" class="table cell-border display table--add" cellspacing="0" width="100%">
-            <p class="p--header-table">Reservations</p>
+            <p class="p--header-table"><h2>Reservations</h2></p>
 
             <thead>
             <tr class="tr-th--custom">
@@ -18,22 +18,6 @@
             </tr>
             </thead>
             <tbody>
-                <tr class="tr-td--custom">
-                    <td class="td--content-left">Reservation Number</td>
-                    <td class="td--content-left">PC Name</td>
-                    <td class="td--content-left">Start Time</td>
-                    <td class="td--content-left">End Time</td>
-                    <td class="td--content-left">Student</td>
-                    <td class="td--content-left">Active</td>
-                </tr>
-                <tr class="tr-td--custom">
-                    <td class="td--content-left">Reservation Number</td>
-                    <td class="td--content-left">PC Name</td>
-                    <td class="td--content-left">Start Time</td>
-                    <td class="td--content-left">End Time</td>
-                    <td class="td--content-left">Student</td>
-                    <td class="td--content-left">Active</td>
-                </tr>
                 @foreach($reports as $report)
                     <tr class="tr-td--custom">
                         {{-- Columns --}}
