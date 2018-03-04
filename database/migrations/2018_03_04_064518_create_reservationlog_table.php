@@ -15,7 +15,7 @@ class CreateReservationlogTable extends Migration
     {
         Schema::create('reservationlog', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('res_number')->autoIncrement();
+            $table->integer('res_number');
             $table->string('pc_name',100);
             $table->dateTime('starttime');
             $table->dateTime('endtime');
