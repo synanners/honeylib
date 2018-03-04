@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $students = Student::all();
-
+        dd($students);
         return view('home')->with('students',$students);
     }
 
