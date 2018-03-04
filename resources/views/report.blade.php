@@ -34,14 +34,17 @@
                     <td class="td--content-left">Student</td>
                     <td class="td--content-left">Active</td>
                 </tr>
-                <tr class="tr-td--custom">
-                    <td class="td--content-left">Reservation Number</td>
-                    <td class="td--content-left">PC Name</td>
-                    <td class="td--content-left">Start Time</td>
-                    <td class="td--content-left">End Time</td>
-                    <td class="td--content-left">Student</td>
-                    <td class="td--content-left">Active</td>
-                </tr>
+                @foreach($reports as $report)
+                    <tr class="tr-td--custom">
+                        {{-- Columns --}}
+                        <td class="td--content-left">{{ $report->res_number }}</td>
+                        <td class="td--content-left">{{ $report->pc_name }}</td>
+                        <td class="td--content-left">{{ $report->starttime }}</td>
+                        <td class="td--content-left">{{ $report->endtime }}</td>
+                        <td class="td--content-left">{{ $report->student }}</td>
+                        <td class="td--content-left">{{ $report->active }}</td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

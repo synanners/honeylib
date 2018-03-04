@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Student;
+use App\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,12 +27,12 @@ class HomeController extends Controller
     public function index()
     {
         $students = Student::all();
-        dd($students);
         return view('home')->with('students',$students);
     }
 
     public function reports(){
-        return view('report');
+        $reports = Reservation::all();
+        return view('report')->with('reports', $reports);
     }
 
     public function logout(){
