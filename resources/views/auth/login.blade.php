@@ -4,9 +4,9 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-4">
             <div class="card">
-                <img src="https://www.w3schools.com/howto/img_avatar2.png" style="width: 100%; padding: 10px 20px"/>
+                <img class="logo" src="{{ asset('img/library_logo.png') }}"/>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -36,9 +36,9 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-3">
+                            <div class="col-md-8 offset-md-2">
                                 {{-- Sumbit Button--}}
-                                <button type="submit" class="btn btn-primary" style="width: 300px; background-color: #c82333;">
+                                <button type="submit" class="btn btn-primary" style="width: 100%; background-color: #c82333;">
                                     Login
                                 </button>
 
