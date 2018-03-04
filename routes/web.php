@@ -13,7 +13,12 @@
 
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Authentication Routes
 Auth::routes();
-
 Route::get('/', 'HomeController@index')->name('home');
+
+//Application Routes
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/reports', 'HomeController@reports')->name('reports');
+Route::get('/logout', 'HomeController@logout')->name('logout');
+

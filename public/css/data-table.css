@@ -1,0 +1,187 @@
+/* Override Data Table CSS */
+.btn--font-black a {
+    background: transparent;
+    color: #54575b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn--full-width {
+    padding: 2px;
+    width: 100%;
+}
+
+.btn--font-teal a {
+    background: transparent;
+    color: #2a848f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn--font-teal a:hover {
+    text-decoration: none;
+}
+
+.dataTables_filter label {
+    display: block;
+}
+
+.dataTables_filter label .fa-search {
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.dataTables_info,
+.dataTables_length label{
+    font-size: 18px;
+}
+
+.dataTables_length label select {
+    padding: 5px;
+}
+
+.dataTables_wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.font--dark {
+    color: #54575b;
+}
+
+.font--teal {
+    color: #2a848f;
+}
+
+.font--teal-underline {
+    color: #2a848f;
+    text-decoration: underline;
+}
+
+.font--text-bold {
+    font-weight: bold;
+}
+
+.font--under-below { 
+    -webkit-text-underline-position: under;
+    -ms-text-underline-position: below;
+    text-underline-position: under; 
+}
+
+.form-control-sm {
+    margin-bottom: 10px;
+    margin-top: -8px;
+    float: right;
+    font-size: 18px;
+    width: 55%;
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.search { position: relative; }
+.search input { text-indent: 30px;}
+.search .fa-search { 
+  position: absolute;
+  top: 25px;
+  left: 7px;
+  font-size: 15px;
+}
+
+li#customTable_next.paginate_button.page-item a.page-link,
+li#customTable_previous.paginate_button.page-item a.page-link,
+li#finishedTable_next.paginate_button.page-item a.page-link,
+li#finishedTable_previous.paginate_button.page-item a.page-link {
+    border: 1px solid #e5e5e5;
+    padding: 15px 4px;
+    text-align: center;
+    width: 50px;
+    float: right;
+}
+
+.table {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table.dataTable thead>tr>th.sorting_asc, 
+table.dataTable thead>tr>th.sorting_desc, 
+table.dataTable thead>tr>th.sorting, 
+table.dataTable thead>tr>td.sorting_asc, 
+table.dataTable thead>tr>td.sorting_desc, 
+table.dataTable thead>tr>td.sorting {
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    color: #54575b;
+}
+
+.table td {
+    padding: 5px 15px;
+    vertical-align: middle;
+}
+
+.page-item.active .page-link {
+    background-color: #006572;
+    border: transparent;
+    padding: 15px 4px;
+    text-align: center;
+    width: 50px;
+}
+
+.pagination {
+    float: right;
+}
+
+.td--content-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td--content-left {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tr-th--custom {
+    color: #54575b;
+    font-size: 18px;
+}
+
+.tr-th--custom .th--left {
+    text-align: left;
+}
+
+.tr-td--custom {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.toolbar {
+    float: left;
+}
+
+.tr-td--bold {
+    color: #54575b;
+    font-size: 18px;
+    font-weight: 600;   
+}
+
+.btn--teal-eeee,
+.btn--black-eeee {
+    background-color: #eeeeee;
+}
+
+.btn--teal-eeee a {
+    color: #2a848f;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn--black-eeee a {
+    color: #54575b;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
