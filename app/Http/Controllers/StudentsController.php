@@ -13,7 +13,7 @@ class StudentsController extends Controller
 {
     public function show_by_id(Request $request)
     {
-        $student = User::find($request->input('id'));
+        $student = Student::find($request->input('id'));
         return view('view_student_info')->with('student',$student);
     }
 
