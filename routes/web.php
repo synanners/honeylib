@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,28 +13,7 @@
 |
 */
 
-
-//
-//// Home/Base routes
-//Route::get('/home', 'HomeController@index')->name('home');
-//Auth::routes();
-//
-//Route::get('/', 'HomeController@index')->name('home');
-//Route::get('logout-user','HomeController@doLogoutUser');
-//
-////LabPc routes **controller @ App/Http/Controllers
-//Route::get('Labpc/', 'LabpcController@list_all');
-//Route::get('Labpc/{id}','LabpcController@show_by_id');
-//Route::post('Labpc/','LabpcController@create');
-//Route::put('Labpc/{id}', 'LabpcController@update' );
-//Route::delete('Labpc/', 'LabpcController@destroy'),
-//
-////ReservationLog routes
-//Route::get('Labpc/', 'LabpcController@list_all');
-//Route::get('Labpc/{id}','LabpcController@show_by_id');
-//Route::post('Labpc/','LabpcController@create');
-//Route::put('Labpc/{id}', 'LabpcController@update' );
-//Route::delete('Labpc/', 'LabpcController@destroy');
+Route::get('api/users/{id}', 'HomeController@show');
 
 //Authentication Routes
 Auth::routes();

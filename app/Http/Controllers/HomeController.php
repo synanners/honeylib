@@ -6,6 +6,7 @@ use App\Student;
 use App\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Library\ClassFactory as CF;
 
 class HomeController extends Controller
 {
@@ -38,5 +39,11 @@ class HomeController extends Controller
     public function logout(){
         Auth::logout();
         return redirect('/login');
+    }
+
+    public function show($id)
+    {
+        $json = json_encode(CF::model('Student')->all());
+        return $json;
     }
 }

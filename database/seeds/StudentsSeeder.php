@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class StudentsSeeder extends Seeder
@@ -11,6 +12,48 @@ class StudentsSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('students')->insert([
+            'student_num'=>'9E7191A4',
+            'name'=>'Nelvin Castro',
+            'course'=>'BSITWMA',
+            'timein'=>'0',
+            'timeout'=>'0',
+            'img'=>'https://www.w3schools.com/howto/img_avatar2.png',
+            'lastlogin'=> Carbon::now()
+        ]);
+
+        DB::table('students')->insert([
+            'student_num'=>'D37AD754',
+            'name'=>'Juan Raphael Catapia',
+            'course'=>'BSITWMA',
+            'timein'=>'0',
+            'timeout'=>'0',
+            'img'=>'https://www.w3schools.com/howto/img_avatar2.png',
+            'lastlogin'=> Carbon::now()
+        ]);
+
+        DB::table('students')->insert([
+            'student_num'=>'BCA553FF',
+            'name'=>'Aaron Viernes Galarido',
+            'course'=>'BSITWMA',
+            'timein'=>'0',
+            'timeout'=>'0',
+            'img'=>'https://www.w3schools.com/howto/img_avatar2.png',
+            'lastlogin'=> Carbon::now()
+        ]);
+
+        DB::table('students')->insert([
+            'student_num'=>'8AC7E154',
+            'name'=>'Shania Castro Anderson',
+            'course'=>'BSITWMA',
+            'timein'=>'0',
+            'timeout'=>'0',
+            'img'=>'https://www.w3schools.com/howto/img_avatar2.png',
+            'lastlogin'=> Carbon::now()
+        ]);
+
+        /////
+
         DB::table('students')->insert([
             'student_num'=>'201410223',
             'name'=>'Josea Dimasalang',
