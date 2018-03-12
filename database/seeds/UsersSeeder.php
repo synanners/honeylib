@@ -16,7 +16,7 @@ class UsersSeeder extends Seeder
         DB::table('users');
 
         $user = new User();
-        $user->name = "Sample User";
+        $user->username = "admin";
         $user->email = "admin@gmail.com";
         $user->password = bcrypt("admin123");
         $user->save();
