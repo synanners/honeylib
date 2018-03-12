@@ -41,9 +41,4 @@ class HomeController extends Controller
         return redirect('/login');
     }
 
-    public function show($id)
-    {
-        $json = json_encode(CF::model('Student')->all());
-        return $json;
-    }
 }
